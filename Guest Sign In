@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<title>Guest Sign In</title>
+
+<body>
+
+  <style>
+    form {
+      text-align: left;
+    }
+    
+    input {
+      width: 150px;
+      float: center;
+    }
+    
+    body {
+      background-color: #d0e4fe;
+    }
+    
+    h1 {
+      color: orange;
+      text-align: center;
+    }
+    
+    p1 {
+      font-family: "Times New Roman";
+      font-size: 15px;
+    }
+    
+    p2 {
+      font-family: "Times New Roman";
+      font-size: 15px;
+    }
+    
+    h4 {
+      font-family: "Times New Roman";
+      font-size: 15px;
+    }
+    
+    p4 {
+      font-family: "Times New Roman";
+      font-size: 15px;
+    }
+  </style>
+
+  <h1>Welcome to Blackstone Technology Group!</h1>
+
+
+
+  <p1 id="demo1">Please click on Action Button below</p1>
+
+  <button type="button" onclick="document.getElementById('demo1').innerHTML = 'Action Button works'">
+    Action Button</button>
+  <br>
+  <br>
+
+
+
+  <p2 id="demo2">Please click on Update button below</p2>
+
+  <button type="button" onclick="document.getElementById('demo2').innerHTML = 'Update button works'">
+    Update</button>
+
+
+
+  <h4>Please enter your info below and then click on "Sign In" button.</h4>
+
+  <p4 id="demo3">I'm creating the type-in box & radio selection here:</p4>
+  <br>
+  <br>
+
+
+  <form name="myForm" action="demo_form.asp" onsubmit="return validateForm()" method="post">
+    First Name:
+    <input id="first" name="First Name" type="text">
+    <br>
+    <br>
+
+    <form name="myForm" action="demo_form.asp" onsubmit="return validateForm()" method="post">
+      Last Name:
+      <input id="second" name="Last Name" type="text">
+      <br>
+      <br>
+
+      <form name="myForm" action="demo_form.asp" onsubmit="return validateForm()" method="post">
+        Point of Contact:
+        <input id="point" name="Point of Contact" type="text">
+        <br>
+        <br>
+
+        <form name="myForm" action="demo_form.asp" onsubmit="return validateForm()" method="post">
+          E-mail Address:
+          <input id="email" name="E-mail Address" type="text">
+          <br>
+          <br>
+
+          <form name="myForm" action="demo_form.asp" onsubmit="return validateForm()" method="post">
+
+            <form name="myForm" action="demo_form.asp" onsubmit="return validateForm()" method="post">
+              Phone Number:
+              <input id="phone" name="Phone Number" type="number" min="10" max="10">
+              <br>
+              <br>
+              <label id="select" name="Purpose of Visit">What is the purpose of your visit?</label>
+              <Select>
+                <option value="0">Select</option>
+
+                <option value="1">Conference</option>
+
+                <option value="2">Delivery</option>
+
+                <option value="3">General Inquiry</option>
+
+                <option value="4">Interview</option>
+
+                <option value="5">Other</option>
+              </Select>
+              <br>
+              <br>
+
+              <label id="comments" name="Comments">Do you have any additional comments?</label>
+
+              <textarea></textarea>
+              <br>
+
+              <br>
+
+              <button type="button" onclick=document.forms[0].reset()>Reset</button>
+              <button type="button" onclick="validateForm()">Sign In</button>
+
+              <script>
+                //function validateForm() {
+                //    var f = document.forms["myForm"]["fname"].value;
+                //    var l = document.forms["myForm"]["lname"].value;
+                //    var p = document.forms["myForm"]["poc"].value;
+                //    var e = document.forms["myForm"]["email"].value;
+                //    var n = document.forms["myForm"]["phone"].value;
+
+                //    if(f == null || f == "") {
+
+                //      alert("Your first name is required.");
+
+                //     } else if (l == null || l == "") {
+
+                //      alert("Your last name is required");
+
+                //     } else if (p == null || p == "") {
+
+                //      alert("Your point of contat is required.");
+
+                //     } else if (e == null || e == "") {
+
+                //      alert("Your e-mail address is required.");
+
+                //     } else if(n == null || n == "") {
+
+                //      alert("Your phone number is required and it must be numeric only.");
+
+
+                //     } else if (f == null && l == null && p == null && e == null && n == null) {
+
+                //      alert("Form can not be blank.");
+                //     }
+
+
+                //}
+              </script>
+
+              <script>
+                function validateForm() {
+                  var textstring = '';
+
+                  for (i = 0; i < 5; i++) {
+                    var box = document.forms["myForm"].elements[i];
+                    if (!box.value) {
+                      alert('The ' + box.name + ' is required.');
+                      box.focus()
+                      return;
+                    }
+                    textstring += box.name + ': ' + box.value + '\n';
+
+                  }
+
+                  window.location = 'http://www.bstonetech.com/';
+
+                }
+              </script>
+
+</body>
+
+</html> //      alert("Your e-mail address is required.");
+
+                //     } else if(n == null || n == "") {
+
+                //      alert("Your phone number is required and it must be numeric only.");
+
+
+                //     } else if (f == null && l == null && p == null && e == null && n == null) {
+
+                //      alert("Form can not be blank.");
+                //     }
+
+
+                //}
+              </script>
+
+              <script>
+                function validateForm() {
+                  var textstring = '';
+
+                  for (i = 0; i < 5; i++) {
+                    var box = document.forms["myForm"].elements[i];
+                    if (!box.value) {
+                      alert('The ' + box.name + ' is required.');
+                      box.focus()
+                      return;
+                    }
+                    textstring += box.name + ': ' + box.value + '\n';
+
+                  }
+
+                  window.location = 'http://www.bstonetech.com/';
+
+                }
+              </script>
+
+</body>
+
+</html>
