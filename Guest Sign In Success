@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+	<title>Thank you!</title>
+<style>
+body {
+	background-color: #d0e4fe;
+}
+
+h1 {
+	color: orange;
+	text-align: center;
+}
+
+p2 {
+	font-family: "Times New Roman";
+	font-size: 20px;
+}
+
+p3 {
+	font-family: "Times New Roman";
+	font-size: 15px;
+}
+
+p3 {
+	font-family: "Times New Roman";
+	font-size: 15px;
+}
+
+</style>
+
+	<head>
+		<link rel="stylesheet" href="style.css">
+		<script src="script.js"></script>
+	</head>
+
+	<body>
+		<h1>Thank you!</h1><br>
+		<p2>You've successfully signed in. Please be seated & your POC will call you momentarily.</p2><br><br>
+		<p3>Regards,</p3><br>
+		<p4>Blackstone Technology Group.</p4>
+	</body></html>
